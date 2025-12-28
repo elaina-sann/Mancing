@@ -1,0 +1,28 @@
+{
+  "maps": ["Danau", "Pulau Awan"],
+  "fish": {
+    "Danau": [
+      {"name":"Cupang","rarity":"Common","chance":35,"weight":[1,3],"rarity_lock":35,"price":10},
+      {"name":"Lele","rarity":"Uncommon","chance":25,"weight":[3,8],"rarity_lock":75,"price":25}
+    ],
+    "Pulau Awan": [
+      {"name":"Awan Guppy","rarity":"Common","chance":20,"weight":[1,2],"rarity_lock":20,"price":15},
+      {"name":"Ikan Rahasia","rarity":"Secret","chance":1,"weight":[40,60],"rarity_lock":300,"price":2000}
+    ]
+  },
+  "quests": {
+    "Danau": [
+      {"desc":"Capai Level 5","type":"level","target":5},
+      {"desc":"Tangkap 10 Cupang","type":"specific","target":10,"fish":"Cupang"},
+      {"desc":"Jual 10 ikan","type":"sell","target":10}
+    ],
+    "Pulau Awan": [
+      {"desc":"Capai Level 5","type":"level","target":5},
+      {"desc":"Tangkap 10 ikan Pulau Awan","type":"specific","target":10,"fish":"Awan Guppy"},
+      {"desc":"Jual 10 ikan","type":"sell","target":10}
+    ]
+  },
+  "events": {
+    "jam_ganjil": {"bonus_luck": 20, "desc": "Event Spesial!"}
+  }
+}
